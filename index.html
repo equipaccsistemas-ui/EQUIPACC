@@ -11,7 +11,31 @@
 
 
 <style>
-.qr-section{
+.contact-float{
+    position:fixed;
+    right:20px;
+    bottom:100px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#005BBB;
+    color:white;
+    font-size:30px;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+    z-index:9999;
+    transition:.3s;
+}
+
+.contact-float:hover{
+    transform:scale(1.08);
+}
+	
+	
+	.qr-section{
     margin-top:40px;
 }
 
@@ -587,6 +611,10 @@ body::before{
    target="_blank">
    💬
 </a>
-
+<a class="contact-float"
+   href="Rafael_Toledo.vcf"
+   download>
+   👤
+</a>
 </body>
 </html>
